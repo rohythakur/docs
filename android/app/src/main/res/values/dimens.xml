@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main hour/minute cards -->
+    <dimen name="card_width">80dp</dimen>
+    <dimen name="card_height">110dp</dimen>
+    <dimen name="card_margin">4dp</dimen>
+
+    <!-- Seconds cards (smaller) -->
+    <dimen name="card_width_small">50dp</dimen>
+    <dimen name="card_height_small">68dp</dimen>
+    <dimen name="card_margin_small">3dp</dimen>
+
+    <!-- Colon separator -->
+    <dimen name="colon_width">26dp</dimen>
+    <dimen name="colon_size">48sp</dimen>
+
+    <!-- Battery row -->
+    <dimen name="battery_text_size">14sp</dimen>
+
+    <!-- Outer clock widget padding -->
+    <dimen name="clock_outer_padding">16dp</dimen>
+</resources>
