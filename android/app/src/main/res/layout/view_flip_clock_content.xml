@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/clock_outer_padding">
+
+    <!-- HH:MM row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.flipclock.aod.FlipCardView
+            android:id="@+id/hourTens"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_margin="@dimen/card_margin" />
+
+        <com.flipclock.aod.FlipCardView
+            android:id="@+id/hourUnits"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_margin="@dimen/card_margin" />
+
+        <TextView
+            android:layout_width="@dimen/colon_width"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/colon_color"
+            android:textSize="@dimen/colon_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <com.flipclock.aod.FlipCardView
+            android:id="@+id/minuteTens"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_margin="@dimen/card_margin" />
+
+        <com.flipclock.aod.FlipCardView
+            android:id="@+id/minuteUnits"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_margin="@dimen/card_margin" />
+
+    </LinearLayout>
+
+    <!-- Seconds row (toggleable) -->
+    <LinearLayout
+        android:id="@+id/secondsRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+
+        <com.flipclock.aod.FlipCardView
+            android:id="@+id/secondTens"
+            android:layout_width="@dimen/card_width_small"
+            android:layout_height="@dimen/card_height_small"
+            android:layout_margin="@dimen/card_margin_small" />
+
+        <com.flipclock.aod.FlipCardView
+            android:id="@+id/secondUnits"
+            android:layout_width="@dimen/card_width_small"
+            android:layout_height="@dimen/card_height_small"
+            android:layout_margin="@dimen/card_margin_small" />
+
+    </LinearLayout>
+
+    <!-- Battery row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <View
+            android:id="@+id/batteryIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/batteryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/battery_text_color"
+            android:textSize="@dimen/battery_text_size"
+            android:fontFamily="monospace"
+            android:text="--" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flip Clock AOD</string>
+    <string name="dream_name">Flip Clock</string>
+    <string name="open_daydream_settings">Set as Screensaver / AOD</string>
+    <string name="label_show_seconds">Show seconds</string>
+    <string name="label_brightness">Brightness</string>
+</resources>

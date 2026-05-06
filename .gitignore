@@ -26,3 +26,14 @@ source/.asset_pipeline
 npm-debug.log
 package-lock.json
 .cache
+# Android
+*.iml
+.gradle/
+android/.gradle/
+android/local.properties
+android/app/build/
+android/build/
+android/captures/
+android/.externalNativeBuild/
+android/.cxx/
+android/app/release/
