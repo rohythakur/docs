@@ -1,18 +1,17 @@
 package com.flipclock.aod
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
 import android.widget.SeekBar
-import android.widget.Switch
 import android.widget.Button
-import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var flipClockView: FlipClockView
-    private lateinit var switchSeconds: Switch
+    private lateinit var switchSeconds: SwitchCompat
     private lateinit var seekBrightness: SeekBar
     private lateinit var btnOpenSettings: Button
 
@@ -25,7 +24,6 @@ class MainActivity : Activity() {
         seekBrightness  = findViewById(R.id.seekBrightness)
         btnOpenSettings = findViewById(R.id.btnOpenDaydreamSettings)
 
-        // Restore saved preferences
         val showSecs = ClockPreferences.showSeconds(this)
         val brightness = ClockPreferences.brightness(this)
 

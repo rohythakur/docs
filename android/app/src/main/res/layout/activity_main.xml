@@ -39,7 +39,7 @@
             android:textColor="@color/battery_text_color"
             android:textSize="16sp" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchSeconds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
